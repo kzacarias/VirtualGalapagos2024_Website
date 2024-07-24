@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--no clue what meta name does, width i think sets the width of the website?-->
+    <title>Virtual Galapagos</title>
+    <link rel="icon" href="images/Virtual Galapagos Boobie Julia.png">
+    <link rel="stylesheet" href="style.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!--side menu for mobile version-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body class="about-us">
+
+    <div class="subheader">
+        <h1>ACTIVITIES</h1>
+    </div>
+
+    <div class="wrapper sub">
+        <header>
+          <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>   <!--top left image-->
+            </div>
+            <div class="menu" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="teacherResources.html">TEACHER RESOURCES</a></li>
+                    <li><a href="activities.html" class="active">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        </header>
+   
+
+    </div>
+
+    <div class="space">
+        <p><br></p>
+    </div>
+
+    <div class= "box bg7">
+      <section class="resources">
+        <h1>VG2023 Modules</h1>
+        <div class="columns-container">
+            <div class="column">
+                <h2>Tortoise 101</h2>
+                <ul>
+                   
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Islands</h2>
+                <ul>
+                   
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Ecosystem Dynamics</h2>
+                <ul>
+                  <li><a href="predatorPreyDD.html">Predator and Prey Drag and Drop</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Tortoise Ancestry</h2>
+                <ul>
+                    <li><a href="adaptationsDD.html">Adaptations Drag and Drop</a></li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Looking Forward</h2>
+                <ul>
+                  <li><a href="timelineDD.html">Timeline Drag and Drop</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </div>
+
+  <div class="space">
+    <p><br></p>
+    </div>
+
+
+
+  <div class="space">
+    <p><br></p>
+</div>
+
+
+    <div class="box bg4">
+        <h1>Virtual Galapagos</h1>
+    </div>
+
+
+
+  <!--footer-->
+<div class="footer">
+    <h4>VG2023</h4>
+    <p>Bringing The Galapagos To Classrooms Everywhere</p>
+    <div class ="icons">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="teacherResources.html">Teacher Resources</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class ="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Sponsored by Colgate University | 13 Oak Drive, Hamilton, NY, 13346</p>
+</div>
+
+
+<script>
+
+  var menu = document.getElementById("menu");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-700px";
+  }
+  
+</script>
+
+
+<script>
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.querySelector('nav');
+    const navbarHeight = navbar.offsetHeight;
+  
+    navbar.style.transition = 'transform 0.3s ease'; // Adjust the transition time as needed
+  
+    window.addEventListener('scroll', () => {
+      const currentScrollPos = window.pageYOffset;
+      const scrollDown = currentScrollPos > prevScrollPos;
+  
+      if (scrollDown && currentScrollPos > navbarHeight-40) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      if (currentScrollPos > navbarHeight){
+        navbar.style.top = 0;
+        navbar.style.transition = 'top 0.3s ease in out'; // Adjust the time it takes for the navbar to reach the top
+
+      } else {
+        navbar.style.top = null;
+        navbar.style.transition = 'top 0.1s ease in out'; // Adjust the time it takes for the navbar to reach the top
+
+      }
+  
+      prevScrollPos = currentScrollPos;
+    });
+  </script>
+  
+  
+</body>
+
+
+</html>
+

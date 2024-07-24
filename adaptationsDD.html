@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--no clue what meta name does, width i think sets the width of the website?-->
+    <title>Virtual Galapagos</title>
+    <link rel="icon" href="images/Virtual Galapagos Boobie Julia.png">
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="dragDropStyle.css">      
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!--side menu for mobile version-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="adaptations.js" defer></script>
+</head>
+
+<body class="about-us">
+
+    <div class="subheader">
+        <h1>ACTIVITIES</h1>
+    </div>
+
+    <div class="wrapper sub">
+        <header>
+          <nav>
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png"></a>   <!--top left image-->
+            </div>
+            <div class="menu" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html" >HOME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="teacherResources.html">TEACHER RESOURCES</a></li>
+                    <li><a href="activities.html" class="active">ACTIVITIES</a></li>
+                    <li><a href="contact.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        </header>
+    </div>
+
+    <div class="space">
+        <p><br></p>
+    </div>
+
+    <div class= "box bg7">
+        <div class="card-box cards1 game">
+            <h1>Adaptations Matching Game: Match the Bears!</h1>
+            <br>
+            <a href="activities.html" target="_parent"  class="hero-btn pink-btn back-btn"> <- Back to Activities</a>
+            <br>
+            <h3>Drag the bear to the environment it is most fit to survive in!</h3>
+            <section class="draggable-elements">
+              <img src="images/brownBearDD.png" class="draggable" style="color: #ff6384;" id="brown"></i>
+              <img src="images/pandaDD.png" class="draggable" style="color: #36a2eb;" id="panda"></i>
+              <img src="images/polarBearDD.png" class="draggable" style="color: #ffce56;" id="polar"></i>
+              <img src="images/koalaDD.png" class="draggable" style="color: #9966ff;" id="koala"></i>
+              <img src="images/redPandaDD.png" class="draggable" style="color: #4bc0c0;" id="redPanda"></i>
+            </section>
+            <section class="droppable-elements">
+              <div class="droppable" data-draggable-id="redPanda" style="background-image: url(images/redPandaDDBacking.png)"></div>
+              <div class="droppable" data-draggable-id="panda" style="background-image: url(images/pandaDDBacking.png)"></div>
+              <div class="droppable" data-draggable-id="brown" style="background-image: url(images/brownBearDDBacking.png)"></div>
+              <div class="droppable" data-draggable-id="koala" style="background-image: url(images/koalaDDBacking.png)"></div>
+              <div class="droppable" data-draggable-id="polar" style="background-image: url(images/polarBearDDBacking.png)"></div>
+            </section>
+            <section class = "labels">
+              <span>Mid Trees</span>
+              <span>Bamboo</span>
+              <span>Forest</span>
+              <span>Treetops</span>
+              <span>Arctic</span>
+            </section>
+            
+        </div>
+    </div>
+    
+    <div class="space">
+        <p><br></p>
+    </div>
+    <div class="space">
+        <p><br></p>
+    </div>
+
+
+    <div class="box bg4">
+        <h1>Virtual Galapagos</h1>
+    </div>
+
+
+
+  <!--footer-->
+<div class="footer">
+    <h4>VG2023</h4>
+    <p>Bringing The Galapagos To Classrooms Everywhere</p>
+    <div class ="icons">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="teacherResources.html">Teacher Resources</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class ="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Sponsored by Colgate University | 13 Oak Drive, Hamilton, NY, 13346</p>
+</div>
+
+
+<script>
+
+  var menu = document.getElementById("menu");
+  function showMenu(){
+      navLinks.style.right = "0";
+  }
+  function hideMenu(){
+      navLinks.style.right = "-700px";
+  }
+  
+</script>
+
+
+    <script>
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.querySelector('nav');
+    const navbarHeight = navbar.offsetHeight;
+  
+    navbar.style.transition = 'transform 0.3s ease'; // Adjust the transition time as needed
+  
+    window.addEventListener('scroll', () => {
+      const currentScrollPos = window.pageYOffset;
+      const scrollDown = currentScrollPos > prevScrollPos;
+  
+      if (scrollDown && currentScrollPos > navbarHeight-40) {
+        navbar.style.transform = 'translateY(-100%)';
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+      if (currentScrollPos > navbarHeight){
+        navbar.style.top = 0;
+        navbar.style.transition = 'top 0.3s ease in out'; // Adjust the time it takes for the navbar to reach the top
+
+      } else {
+        navbar.style.top = null;
+        navbar.style.transition = 'top 0.1s ease in out'; // Adjust the time it takes for the navbar to reach the top
+
+      }
+  
+      prevScrollPos = currentScrollPos;
+    });
+  </script>
+</body>
+
+
+</html>
+
