@@ -1,0 +1,808 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+h1{
+    font-size: 48px;
+    color: #fff;
+    margin: 0px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+p{
+    color: #000;
+}
+
+.box{
+    height: 110vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+.card-box {
+    width: 75%;
+    height: 80%;
+    /*background: rgba(69, 151, 209, 0.973);
+    /*background-image: linear-gradient(rgba(18, 37, 51, 0.8), rgba(14, 28, 39, 0.9));
+    
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+    /* Remove the position: absolute, top, and left properties */
+    border-radius: 3%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: absolute;
+    left: 12%;
+}
+
+
+
+/*=================================*/
+/*=======BUTTONS===================*/
+
+.hero-btn{ /*main link button*/
+    display: inline-block;
+    text-decoration: none;
+    color:#ffffff;
+    border: 1px solid #ffffff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5%;
+}
+
+.hero-btn:hover{ /*effect when you hover over hero btn*/
+    border: 1px solid #87315c;
+    background-color: #f05aa4;
+    transition: 0.5s;
+}
+
+
+.pink-btn{
+    border: 1px solid #f05aa4;
+    background: #f05aa4;
+    color:#fff;
+}
+
+.pink-btn:hover{
+    box-shadow: 2px 2px 1px rgba(172, 28, 122, 0.6);
+    background-color: #cd4187;
+}
+
+/*=================================*/
+/*=========HEADER==================*/
+
+header{
+    width: 100%;
+    height: 10vh;
+    background: url(images/170716_AdultMarineIguanaOldDock_0001.jpg)
+    no-repeat 50% 50%;
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+.logo img{
+    position: fixed;
+    float: left;
+    margin: 0px 36px;
+    width: 100px;
+}
+
+nav{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    right: 0;
+    background-image: linear-gradient(rgba(26, 56, 77, 0.797), rgba(29, 59, 81, 0.929));
+}
+
+.sub nav{
+       top: 37.2vh;
+}
+
+nav ul {
+    list-style: none;
+    overflow: hidden;
+    color: white;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Horizontally center the items */
+}
+
+nav ul li {
+    padding: 20px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px 15px; /* Adjust the padding as needed for spacing */
+    border: 1px solid transparent; /* Add a transparent border to create spacing */
+}
+
+nav ul li a.active{
+    background: #f05aa4;
+}
+
+nav ul li a:hover{
+    background: rgb(51, 106, 145);
+    transition: 0.5s;
+}
+
+
+/*=================================*/
+/*=======INTRO SCREEN==============*/
+
+.bg1{
+    background-image: url(images/170716_AdultMarineIguanaOldDock_0001.jpg);
+}
+
+.text-box {
+    height: 50vh;
+    width: 40%;
+    color: #fdfdfd;
+    position: absolute;
+    left: 54%;
+    bottom: 0; /* Initial position off-screen */
+    top: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(42, 114, 166, 0.818);
+    opacity: 1; /* Set initial opacity to 1 */
+    animation: slideIn 1.5s ease-in-out forwards;
+    z-index: 1;
+    border-radius: 4%;
+  }
+
+  .text-box p{
+    margin-top: 3%;
+    color: #fff;
+  }
+
+  .text-box a{
+    margin-top: 7%;
+  }
+
+  
+  @keyframes slideIn {
+    from {
+      top: 100%; /* Slide in from bottom */
+      opacity: 0;
+    }
+    to {
+      top: 20%; /* Final position at the bottom */
+      opacity: 1;
+    }
+  }
+
+/*=================================*/
+/*=======CARD SCREEN 1=============*/
+
+.bg2{
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/170715BoobieInNestWithEggs1116.jpg);
+}
+
+.bg2 h1, .bg3 h1, .bg6 h1, .bg5 h1{
+    padding-top: 4%;
+    padding-bottom: 2.5%;
+}
+
+.cards1, .cards2 {
+    padding-top: 7%;
+}
+
+.cards1 h1, .cards1 h3, .cards2 h1, .cards2 h3{
+    color: #e7e7e7;
+}
+
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5% 0% 0%;
+
+}
+.cards-col{
+    border-radius: 5%;
+    background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+    flex-basis: 31%;
+    padding: 1% 0.7% 5%;
+}
+
+
+
+.cards-col:hover{
+    box-shadow: 4px 4px 5px rgba(255, 42, 180, 0.6);
+    transition: 0.5s;
+}
+
+.cards-col img{
+    width: 100%;
+    border-radius: 5%;
+}
+
+.cards-col h3{
+    text-align: left;
+    color: #000;
+    padding-top: 3%;
+    padding-left: .2%;
+    font-size: 23px;
+}
+
+.cards-col p{
+    padding-top: 4%;
+    padding-left: .2%;
+    text-align: left;
+    font-size: 17px;
+}
+
+
+.text{
+    padding: 5% 0;
+    background-color:rgba(35, 73, 101, 0.542);
+    text-align: center;
+    align-items: center;
+    position: absolute;
+}
+
+.text h1{
+    color: #000;
+}
+
+/*=================================*/
+/*=======CARD SCREEN 2=============*/
+
+.bg3 {
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/170718_PenguinsOnRocks_0002.jpg);
+}
+
+.cards2 h3{
+    text-align: center;
+}
+
+
+.horizontal-card{
+    margin-top: 6%;
+    padding: 1% 4% 0.5% 1%;
+    display: flex;
+    flex-basis: 10%;
+    background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+    border-radius: 5%;
+}
+
+.horizontal-card:hover{
+    box-shadow: 4px 4px 5px rgba(255, 42, 180, 0.6);
+    transition: 0.5s;
+}
+
+.horizontal-card img{
+    width: 70%;
+    border-radius: 5%;
+}
+
+.horizontal-card p{
+    color: #383838;
+    margin-top: 6%;
+}
+
+.left{
+    margin-right: -10%;
+    margin-left: 4%;
+    align-items: center;
+    justify-content: center;
+}
+
+.left img{
+    width: 50%;
+}
+
+
+.right{
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.right a{
+    margin-top: 4%;
+    margin-left: 25%;
+    margin-right: 2%;
+    padding: 17px 20px;
+    font-size: 20px;
+    border-radius: 5%;
+}
+
+
+.right p{
+    font-size: 20px;
+}
+
+h2{
+    font-size: 28px;
+}
+
+
+
+/*=================================*/
+/*=======FOOTER====================*/
+
+.bg4{
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/Tortoise\ up\ close.jpg);
+    height: 60vh;
+}
+
+
+.footer{ /* creating the space and format for the footer*/
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    background: #fff;
+}
+
+.footer p{ /*the bottom text info*/
+    font-size: 15px;
+    padding-bottom: 34px;
+}
+
+.footer h4{ /* bottom text header */
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20x;
+}
+
+.footer a{
+    color: #383838;
+    margin: 0 13px;
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer a:hover{
+    color: #f05aa4;
+}
+
+.footer .fa{    /*colors and spaces the icons on the bottom*/
+    color: #383838;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 38px 0 18px;
+}
+
+.footer .fa:hover{
+    color: #f05aa4;
+}
+
+/*=================================*/
+/*======SUB HEADER=================*/
+
+
+.subheader{
+    background-image: url(images/170720_LandIguanaSmiling_0003_edited.jpg);
+    height: 35vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+.about-us header{
+    background-image: url(images/170720_LandIguanaSmiling_0003_edited.jpg);
+
+}
+
+
+/*=================================*/
+/*======ABOUT US===================*/
+
+
+.right.about a{
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+.bg5{
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/170720_NinjaTortoise_0008.JPG);
+}
+
+.bg5 .horizontal-card img{
+    width: 50%;
+}
+
+.left.about{
+    margin-right: -20%;
+}
+
+.right.about h2{
+    margin-left: -40%;
+}
+
+.right.about p{
+    font-size: 17px;
+    margin-left: -40%;
+}
+
+
+
+/*=================================*/
+/*=======TEACHER RESOURCES=========*/
+.bg6{
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/LandIguanaColorfulVegetation.png);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.resources h2{
+    color: #383838;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: underline 2px #f05aa4;
+    text-underline-offset: 12px;
+}
+
+.resources{
+    padding: 50px 0;
+    justify-content: center;
+    width: 100%;
+}
+
+.resources h1{
+    justify-content: center;
+    padding-bottom: 5%;
+    display: flex;
+}
+
+.columns-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+    background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+    border-radius: 5%;
+}
+
+.column{
+    flex-basis: 20%;
+    padding: 15px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.column a{
+    color: #383838;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    vertical-align: top;
+}
+
+.column a:hover{
+    color: #f05aa4;
+    transition: 0.3s;
+    font-size: 16.12px;
+    z-index: 2;
+}
+
+.column ul{
+    list-style-type: none;
+    margin: 0;
+    padding-top: 26px;
+}
+
+.column ul li{
+    padding: 5px 0;
+}
+/*=================================*/
+/*=========ACTIVITIES==============*/
+
+
+.bg7 {
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/170715_FinchPotatoElChato_0001.JPG);
+}
+
+
+
+
+/*=================================*/
+/*======CONTACT US=================*/
+.bg8 {
+    background-image: linear-gradient(rgba(30, 64, 87, 0.4), rgba(26, 54, 74, 0.542)), url(images/170720_SeaLionOnCliff`_0002.jpg);
+}
+
+
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 55px 0 55px;
+}
+
+.location iframe{
+    width: 100%;   
+    border-radius: 5%;
+}
+
+
+.bg8 h2{
+    text-align: center;
+    color: #ffffff;
+    font-size: 35px;
+}
+
+.location h2{
+    padding-bottom: 40px;
+}
+
+.contact-us{
+    background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+    margin: 5% 10%;
+    border-radius: 5%;
+}
+
+.contact-col{
+    flex-basis: 40%;
+    margin:0 4% 30px;
+}
+
+.contact-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa{ /*icons*/
+    font-size: 28px;
+    color:#f05aa4;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p{
+    padding: 0;
+}
+
+.contact-col div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/*=====MOBILE====*/
+nav .fa{
+    display: none;
+}
+
+@media (max-width: 700px) {
+   
+    h1{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    .text-box{
+        width: 80%;
+        left: 50px;
+        bottom: 0%;
+    }
+    
+    .row{
+        display:table;
+        margin-bottom: 15px;
+    }
+    .logo img {
+        width: 100px;
+        margin: 0px 4px;
+    }
+
+   
+    .menu {
+        position: fixed;
+        right: -700px;
+        width: 100%;
+        transition: 0.5s; /* This will animate the sliding in and out effect */
+        z-index: 55;
+        background-image: linear-gradient(rgba(26, 56, 77), rgba(29, 59, 81));
+    }
+
+    nav ul {
+        position: absolute;
+        list-style: none;
+        overflow: hidden;
+        color: white;
+        padding: 0;
+        display: block;
+        justify-content: center; /* Horizontally center the items */
+        padding: 30px;
+        background-image: linear-gradient(rgba(26, 56, 77), rgba(29, 59, 81));
+        width: 100%;
+        height: 100vh;
+        
+    }
+    nav .fa{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .fa-bars{
+        position: absolute;
+        left: 300px;
+        top: 30px;
+        z-index: 1;
+        background-color: #f05aa4;
+        padding: 9px 7px 7px 7px;
+        border-radius: 5%;
+
+    }
+
+    .card-box{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        position: unset;  
+        text-align: center;
+        margin-left: 10%;  
+    }
+
+
+    .cards-col{
+        margin: 5px 0;
+    }
+    .cards-col h3{
+
+        font-size: 20px;
+    }
+    .cards-col p{
+        font-size: 15px;
+    }
+    
+    .horizontal-card{
+        margin-top: 6%;
+        padding: 1% 4% 0.5% 1%;
+        margin-bottom: 15px;
+        display: block;
+        background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+        border-radius: 5%;
+    }
+    
+    .horizontal-card:hover{
+        box-shadow: 4px 4px 5px rgba(255, 42, 180, 0.6);
+        transition: 0.5s;
+    }
+    
+    .horizontal-card img{
+        width: 70%;
+        border-radius: 5%;
+    }
+    
+    .horizontal-card p{
+        color: #383838;
+        margin-top: 6%;
+        font-size: 15px;
+    }
+    
+    .left{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .left img{
+        width: 30%;
+    }
+    
+    
+    .right{
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    
+    .right a{
+        margin-top: 4%;
+        margin-left: 25%;
+        margin-right: 2%;
+        padding: 17px 20px;
+        font-size: 20px;
+        border-radius: 5%;
+    }
+    
+    
+    .right p{
+        font-size: 15px;
+    }
+    
+    h2{
+        font-size: 20px;
+    }
+
+    .hero-btn.pink-btn{
+        padding: 5px;
+        font-size: 20px;
+        right: 30px;
+    }
+
+    .about.left img{
+        position: relative;
+        right: 30px;
+    }
+    .right.about p{
+        font-size: 15px;
+        margin-left: 0;
+    }
+    .right.about h2{
+        text-align: center;
+        margin-left: 0;
+    }
+    .about.hero-btn.pink-btn{
+        right: 20px;
+    }
+
+    .columns-container{
+        width: auto;
+        display: block;
+    }
+
+    .contact-col div{
+        display: block;
+    }
+
+    .hero-btn.pink-btn.contact-btn{
+        right: 0;
+        padding: 10px;
+    }
+    
+ 
+}
+
+@media (max-width: 700px) and (min-width: 400px) { 
+    nav{
+        background-image: linear-gradient(rgba(26, 56, 77, 0.797), rgba(29, 59, 81, 0.929));
+    }
+}

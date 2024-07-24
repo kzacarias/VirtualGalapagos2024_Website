@@ -1,0 +1,139 @@
+.predPreyDD{
+    height: 130vh;
+}
+
+.score {
+    font-family: monospace;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.25rem;
+    margin: 1rem;
+    position: relative;
+    transition: opacity 0.2s;
+    padding: 5px;
+    border-radius: 5%;
+    color: #1b1b1b;
+    background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+  }
+  #play-again-btn {
+    position: absolute;
+    top: -0.5rem;
+    left: 50%;
+    margin-left: -50px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f05aa4;
+      border: 5px double #fff; 
+      border-radius: 14px;
+      padding: 8px 10px;  
+    outline: none;
+    letter-spacing: .05em;
+    cursor: pointer;
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s, background-color 0.2s;
+  }
+  #play-again-btn:hover {
+    background-color: #cd4187;
+  }
+  #play-again-btn:active {
+    background-color: #f05aa4;;
+  }
+  #play-again-btn.play-again-btn-entrance {
+    opacity: 1;
+    transform: translateX(6rem);
+  }
+  .draggable-items {
+    display: flex;
+    justify-content: center;
+    margin: 2rem;
+    background-image: linear-gradient(#f5f5f5f1,#b3e9ffea);
+    padding: 25px;
+    border-radius: 5%;
+  }
+  .draggable {
+    height: 8rem;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    margin: 0rem 0.5rem;
+    cursor: move;
+    transition: opacity 0.2s;
+  }
+  .draggable:hover {
+    opacity: 0.5;
+  }
+  .matching-pairs {
+    transition: opacity 0.5s;
+    display: flex;
+  }
+  .matching-pair {
+    height: 8rem;
+    width: 22rem;
+    margin: 1rem auto;
+    display: flex;
+    position: relative;
+    right: 5rem;
+  }
+  .matching-pair span {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    user-select: none;
+  }
+  .label {
+    width: 10rem;
+    font-size: 2rem;
+    background-image: linear-gradient(#f5f5f5f1, #b3e9ffea);
+    padding: 1px;
+    border-radius: 5%;
+    position: relative;
+    top: 10rem;
+    left: 11rem;
+  }
+  .droppable {
+    height: 10rem;
+    width: 10rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: bold;
+    background-color: #fff;
+    border: 3px dashed #111;
+    transition: border-width 0.2s, transform 0.2s, background-color 0.4s;
+  }
+  .droppable-hover {
+    background-color: #bee3f0;
+    transform: scale(1.1);
+  }
+  .dropped {
+    border-style: solid;
+  }
+  .dragged {
+    user-select: none;
+    opacity: 0.1;
+    cursor: default;
+  }
+  .draggable.dragged:hover {
+    opacity: 0.1;
+  }
+
+  .card-box{
+    height: auto;
+  }
+
+
+  @media (max-width: 600px) {
+    html { font-size: 14px; }
+    #play-again-btn { top: -0.4rem; }
+    #play-again-btn.play-again-btn-entrance { transform: translateX(7rem); }
+  }

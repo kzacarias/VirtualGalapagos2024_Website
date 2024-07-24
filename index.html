@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--no clue what meta name does, width i think sets the width of the website?-->
+    <title>Virtual Galapagos</title>
+    <link rel="icon" href="images/Virtual Galapagos Boobie Julia.png">
+    <link rel="stylesheet" href="style.css">     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">  <!--side menu for mobile version-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png"></a>   <!--top left image-->
+                </div>
+                <div class="menu" id="navLinks">
+                    <ul>
+                        <li><i class="fa fa-times" onclick="hideMenu()"></i>                        </li>
+                        <li><a href="index.html" class="active">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="teacherResources.html">TEACHER RESOURCES</a></li>
+                        <li><a href="activities.html">ACTIVITIES</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </header>
+    </div>
+
+  <div class="box bg1">
+    <div class="text-box">
+        <h1>Virtual Galapagos</h1>
+        <p>An immersive, elementary science teaching tool</p>
+        <p>Explore the Galapagos Islands in a 3D setting and solve the island's greatest mysteries!</p>
+        <a href="http://virtualgalapagos.colgate.edu/" target="_blank"  class="hero-btn">Click to Tour!</a>
+    </div>
+  </div>
+
+  <div class="space">
+    <p><br></p>
+    </div>
+
+  <div class= "box bg2">
+    <div class="card-box cards1">
+        <h1>What is Virtual Galapagos?</h1>
+        <h3>Virtual Galapagos is an elementary school science software. But it's different from the rest.</h3>
+        <div class="row">
+            <div class="cards-col">
+                <img src="images/170719_InterviewingLenin_0005.JPG">
+                <h3>Inclusive</h3>
+                <p>Through the inclusion of scientists and ways of teaching from all backgrounds, our #1 desired takeaway is wanting all students to believe that they can do science too!</p>
+            </div>
+            <div class="cards-col">
+                <img src="images/170715_TouristsTortoises_0004.jpg">
+                <h3>Immersive</h3>
+                <p>Students are transported into the Galapagos Islands to solve scientific mysteries, traveling through 360 dergee panoramas.</p>
+            </div>
+            <div class="cards-col">
+                <img src="images/170720_SeaLionPADock_0001_1.jpg">
+                <h3>Interactive</h3>
+                <p>Hotspots throughout the panoramas make the tour interactive, allowing students to engage with videos, online activities, and instructions for off-screen activities.</p>
+            </div>
+       </div>
+        
+    </div>
+  </div>
+
+  <div class="space">
+    <p><br></p>
+</div>
+
+    <div class= "box bg3">
+        <div class="card-box cards2">
+            <h1>What is a Virtual Tour? Why is it for me?</h1>
+            <h3>The immersiveness of our tour, complimented by off-sceen activities, makes VG the perfect tool for science in your classroom.</h3>
+            <div class="horizontal-card">
+                <div class="left">
+                    <img src="images/tomas closed mouth.png">
+                    <img src="images/becki.png">
+                </div>
+                <div class="right">
+                    <h2>Education Through Experimentation and Observation</h2>
+                    <p>Our tour is broken up into multiple modules, which are each different science units. Each module
+                        tracks a storyline, where the user will have to complete activites on and off the screen.<br><br>
+                        We use a software called 3DVista, which uses Google-street-view-esqe 360 degree panoramas.
+                        Students have the opportunity to be surrounded by volcanoes, caves, beaches, and more, 
+                        allowing for observations of far away places.
+                        
+                    </p>
+                    <a href="http://virtualgalapagos.colgate.edu/" target="_blank"  class="hero-btn pink-btn">Check out our tour!</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="space">
+        <p><br></p>
+    </div>
+
+    <div class="box bg4">
+        <h1>Virtual Galapagos</h1>
+    </div>
+
+
+
+  <!--footer-->
+<div class="footer">
+    <h4>VG2023</h4>
+    <p>Bringing The Galapagos To Classrooms Everywhere</p>
+    <div class ="icons">
+        <a href="index.html" >Home</a>
+        <a href="about.html">About Us</a>
+        <a href="teacherResources.html">Teacher Resources</a>
+        <a href="activities.html">Activities</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <div class ="icons">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Sponsored by Colgate University | 13 Oak Drive, Hamilton, NY, 13346</p>
+</div>
+
+
+<script>
+
+    var menu = document.getElementById("menu");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-700px";
+    }
+    
+</script>
+
+<script>
+    let prevScrollPos = window.pageYOffset;
+    const navbar = document.querySelector('nav');
+    const navbarHeight = navbar.offsetHeight;
+  
+    navbar.style.transition = 'transform 0.3s ease'; // Adjust the transition time as needed
+  
+    window.addEventListener('scroll', () => {
+      const currentScrollPos = window.pageYOffset;
+      const scrollDown = currentScrollPos > prevScrollPos;
+  
+      if (scrollDown && currentScrollPos > navbarHeight) {
+        navbar.style.transform = 'translateY(-100%)';
+
+      } else {
+        navbar.style.transform = 'translateY(0)';
+      }
+  
+      prevScrollPos = currentScrollPos;
+    });
+  </script>
+  
+</body>
+
+
+</html>
+
